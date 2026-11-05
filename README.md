@@ -8,11 +8,11 @@ I'm Cravvnn, an editor and producer building software for cinematic and collabor
 
 ## Creative Control for Deadlock replays
 
-### [Deadlock Dolly ↗](https://github.com/cravvnn/deadlock-dolly)
+### [Deadlock Dolly](https://github.com/cravvnn/deadlock-dolly)
 
 Direct the camera inside local Deadlock replays. Shape movement, framing and capture.
 
-### [RenderLock ↗](https://github.com/cravvnn/RenderLock)
+### [RenderLock](https://github.com/cravvnn/RenderLock)
 
 Take replay performances into Blender for editable scenes, cinematics and stills.
 
