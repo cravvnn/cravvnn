@@ -4,11 +4,13 @@
   </a>
 </p>
 
-I'm Cravvnn, an editor, producer & developer. I make edits and build tools for cinematics, replay workflows and creative collaboration.
+I'm **Cravvnn**, an editor, producer & developer.
 
-**[cravvnn.link](https://cravvnn.link/)** — my editing work, credits and contact.
+I make edits and build tools for cinematics, replays and creative collaboration.
 
-[Selected work](https://cravvnn.link/#editorial) · [Montages](https://cravvnn.link/#work) · [Community](https://discord.gg/deadlockediting)
+**[cravvnn.link](https://cravvnn.link/)** · [Selected work](https://cravvnn.link/#editorial) · [Montages](https://cravvnn.link/#work) · [Community](https://discord.gg/deadlockediting)
+
+<br>
 
 ## Creative Control for Deadlock replays
 
