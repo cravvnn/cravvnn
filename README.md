@@ -4,7 +4,7 @@
   </a>
 </p>
 
-I'm **Cravvnn**, an editor, producer & developer.
+I'm **Cravvnn**. An editor, producer & developer.
 
 I make edits and build tools for cinematics, replays and creative collaboration.
 
