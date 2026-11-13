@@ -1,12 +1,12 @@
 <p align="center">
   <a href="https://cravvnn.link/">
-    <img src="assets/cravvnn-header-orange.png" alt="Cravvnn — editor, producer and developer. Visit cravvnn.link for editing work, creative tools and contact." width="1200" />
+    <img src="assets/cravvnn-header-orange.png" alt="Cravvnn — editor, producer and developer. Visit cravvnn.link for editing work, credits and contact." width="1200" />
   </a>
 </p>
 
 I'm Cravvnn, an editor, producer & developer. I make edits and build tools for cinematics, replay workflows and creative collaboration.
 
-**[cravvnn.link](https://cravvnn.link/)** — my editing work, tools, credits and contact.
+**[cravvnn.link](https://cravvnn.link/)** — my editing work, credits and contact.
 
 [Selected work](https://cravvnn.link/#editorial) · [Montages](https://cravvnn.link/#work) · [Community](https://discord.gg/deadlockediting)
 
@@ -28,6 +28,6 @@ Bring Deadlock replay performances into editable Blender scenes, with recorded c
 
 **CitadelCast** — camera controls and broadcast tools for live Deadlock matches. Currently in development.
 
-## Open-source contributions
+## Elsewhere on GitHub
 
-I also contribute to the Deadlock tooling ecosystem: [modlock](https://github.com/paralin/modlock), [deadem](https://github.com/Igor-Losev/deadem), [s2replay](https://github.com/paralin/s2replay) and [go-deadlock](https://github.com/paralin/go-deadlock).
+Other projects I've contributed to: [modlock](https://github.com/paralin/modlock), [deadem](https://github.com/Igor-Losev/deadem), [s2replay](https://github.com/paralin/s2replay) and [go-deadlock](https://github.com/paralin/go-deadlock).
