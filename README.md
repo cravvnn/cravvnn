@@ -4,7 +4,7 @@
   </a>
 </p>
 
-I'm Cravvnn, an editor, producer and developer. I make edits and build tools for cinematics, replay workflows and creative collaboration.
+I'm Cravvnn, an editor, producer & developer. I make edits and build tools for cinematics, replay workflows and creative collaboration.
 
 **[cravvnn.link](https://cravvnn.link/)** — my editing work, tools, credits and contact.
 
