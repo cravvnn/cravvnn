@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://cravvnn.link/">
-    <img src="assets/cravvnn-header-message.png" alt="Helping creators create. — Cravvnn" width="1200" />
+    <img src="assets/cravvnn-header-message-clean.png" alt="Helping creators create. — Cravvnn" width="1200" />
   </a>
 </p>
 

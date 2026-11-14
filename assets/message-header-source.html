@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><title>Cravvnn — Message header</title>
+<style>body{margin:0;background:#0f0f0e}canvas{display:block;max-width:100%;height:auto}</style>
+<canvas id="github" width="1200" height="420" aria-label="Helping creators create. — Cravvnn"></canvas>
+<canvas id="twitter" width="1500" height="500" aria-label="Helping creators create. — Cravvnn"></canvas>
+<script>
+const palette={background:[15,15,14],white:[236,236,232],orange:[255,79,0]};
+const bayer=[0,48,12,60,3,51,15,63,32,16,44,28,35,19,47,31,8,56,4,52,11,59,7,55,40,24,36,20,43,27,39,23,2,50,14,62,1,49,13,61,34,18,46,30,33,17,45,29,10,58,6,54,9,57,5,53,42,26,38,22,41,25,37,21];
+function ditheredType(ctx,text,font,x,y,fadeTop,fadeBottom){
+  const w=ctx.canvas.width,h=ctx.canvas.height;
+  const mask=document.createElement('canvas');mask.width=w;mask.height=h;
+  const m=mask.getContext('2d');m.font=font;m.fillStyle='#fff';m.fillText(text,x,y);
+  const layer=document.createElement('canvas');layer.width=w;layer.height=h;
+  const l=layer.getContext('2d'),pixels=l.createImageData(w,h);
+  for(let py=0;py<h;py++)for(let px=0;px<w;px++){
+    const cellX=Math.floor(px/2),cellY=Math.floor(py/2);
+    const t=(bayer[(cellY%8)*8+cellX%8]+.5)/64;
+    const f=Math.max(0,Math.min(1,(cellY*2+1-fadeTop)/(fadeBottom-fadeTop)));
+    const color=f<=t?palette.white:(f>.6+t*.5?palette.background:palette.orange);
+    const i=(py*w+px)*4;
+    pixels.data[i]=color[0];pixels.data[i+1]=color[1];pixels.data[i+2]=color[2];pixels.data[i+3]=255;
+  }
+  l.putImageData(pixels,0,0);
+  // Clip the color pattern through the original antialiased glyph mask.
+  // No bounding-box cutoff or brightness threshold can damage letter edges.
+  l.globalCompositeOperation='destination-in';l.drawImage(mask,0,0);
+  ctx.drawImage(layer,0,0);
+}
+function render(id){
+  const canvas=document.getElementById(id),ctx=canvas.getContext('2d');
+  const social=id==='twitter';
+  ctx.fillStyle='#0f0f0e';ctx.fillRect(0,0,canvas.width,canvas.height);
+  ctx.fillStyle='#ecece8';ctx.font=social?'600 122px Arial':'600 104px Arial';
+  ctx.fillText('Helping creators',social?85:53,social?170:160);
+  ditheredType(ctx,'create.',social?'600 176px Arial':'600 152px Arial',social?77:46,social?325:310,social?235:232,social?344:326);
+  ctx.fillStyle='#ecece8';ctx.font=social?'32px Arial':'28px Arial';ctx.textAlign='right';
+  ctx.fillText('cravvnn',social?1400:1147,social?420:365);
+}
+render('github');render('twitter');
+</script></html>
